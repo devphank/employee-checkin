@@ -18,4 +18,4 @@ This is a simple check-in form for emergency operations personnel.
 4. Access the form via the provided GitHub Pages URL.
 
 ## Author
-Created by [Your Name].
+Created by [Devin Phan].
