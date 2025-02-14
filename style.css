@@ -1,67 +1,48 @@
-/* General Page Styling */
 body {
     font-family: Arial, sans-serif;
-    margin: 20px;
-    padding: 20px;
     background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
 }
 
-/* Container for the Check-In Form */
 .container {
-    max-width: 600px;
+    max-width: 500px;
     background: white;
+    margin: 20px auto;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    margin: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Form Labels */
+h2 {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
 label {
-    font-weight: bold;
-    display: block;
     margin-top: 10px;
 }
 
-/* Form Inputs & Select Dropdown */
 input, select, textarea {
-    width: 100%;
     padding: 10px;
     margin-top: 5px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    font-size: 16px;
 }
 
-/* Buttons */
 button {
-    margin-top: 20px;
+    margin-top: 15px;
     padding: 10px;
-    background: #007bff;
+    background: #28a745;
     color: white;
     border: none;
     cursor: pointer;
-    width: 100%;
-    font-size: 16px;
-    border-radius: 4px;
 }
 
 button:hover {
-    background: #0056b3;
-}
-
-/* Responsive Design for Mobile */
-@media (max-width: 600px) {
-    .container {
-        width: 90%;
-        padding: 15px;
-    }
-
-    input, select, textarea {
-        font-size: 14px;
-    }
-
-    button {
-        font-size: 14px;
-    }
+    background: #218838;
 }
