@@ -1,57 +1,21 @@
-# index.html
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Employee Check-In</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+# Incident Check-in Form
 
-<div class="container">
-    <h2>Employee Check-In Form</h2>
-    
-    <label for="name">Name:</label>
-    <input type="text" id="name" placeholder="First Last" required>
+This is a simple check-in form for emergency operations personnel.
 
-    <label for="position">Position/Title:</label>
-    <input type="text" id="position" placeholder="Your Position" required>
+## Features
+- User-friendly check-in form
+- Basic JavaScript validation
+- Responsive design
 
-    <label for="contact">Primary Contact (Phone/Email):</label>
-    <input type="text" id="contact" placeholder="Cell Phone or Email" required>
+## How to Use
+1. Fill out the form with required details.
+2. Click **Submit** to log details to the console.
 
-    <label for="checkin">Check-In Date & Time:</label>
-    <input type="datetime-local" id="checkin" required>
+## How to Host on GitHub Pages
+1. Push this repository to GitHub.
+2. Go to **Settings > Pages**.
+3. Select **main branch** as the source.
+4. Access the form via the provided GitHub Pages URL.
 
-    <label for="travel">Method of Travel:</label>
-    <select id="travel">
-        <option value="POV">POV</option>
-        <option value="AOV">AOV</option>
-        <option value="Bus">Bus</option>
-        <option value="Air">Air</option>
-        <option value="Other">Other</option>
-    </select>
-
-    <label for="homebase">Home Base:</label>
-    <input type="text" id="homebase" placeholder="Enter Home Base" required>
-
-    <label for="remarks">Remarks (Optional):</label>
-    <textarea id="remarks" rows="3" placeholder="Any additional notes..."></textarea>
-
-    <h3>Check-Out</h3>
-
-    <label for="checkout">Check-Out Date & Time:</label>
-    <input type="datetime-local" id="checkout" required>
-
-    <label for="signature">Prepared By (Signature):</label>
-    <input type="text" id="signature" placeholder="Your Name" required>
-
-    <button onclick="submitForm()">Submit</button>
-    <button onclick="printForm()">Print</button>
-</div>
-
-<script src="script.js"></script>
-
-</body>
-</html>
+## Author
+Created by [Your Name].
