@@ -1,4 +1,4 @@
-# Incident Check-in Form
+# Employee Check-in Form
 
 This is a simple check-in form for emergency operations personnel.
 
