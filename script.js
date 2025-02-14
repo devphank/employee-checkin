@@ -1,38 +1,22 @@
-function submitForm() {
-    let name = document.getElementById("name").value;
-    let position = document.getElementById("position").value;
-    let contact = document.getElementById("contact").value;
-    let checkin = document.getElementById("checkin").value;
-    let travel = document.getElementById("travel").value;
-    let homebase = document.getElementById("homebase").value;
-    let remarks = document.getElementById("remarks").value;
-    let checkout = document.getElementById("checkout").value;
-    let signature = document.getElementById("signature").value;
+document.getElementById("checkinForm").addEventListener("submit", function(event) {
+    event.preventDefault();
 
-    if (!name || !position || !contact || !checkin || !homebase || !signature) {
-        alert("Please fill out all required fields.");
-        return;
-    }
+    const name = document.getElementById("name").value;
+    const position = document.getElementById("position").value;
+    const checkinTime = document.getElementById("checkinTime").value;
+    const contact = document.getElementById("contact").value;
+    const travelMethod = document.getElementById("travelMethod").value;
+    const homeBase = document.getElementById("homeBase").value;
+    const remarks = document.getElementById("remarks").value;
 
-    let formData = {
-        Name: name,
-        Position: position,
-        Contact: contact,
-        "Check-In": checkin,
-        "Method of Travel": travel,
-        "Home Base": homebase,
-        Remarks: remarks,
-        "Check-Out": checkout,
-        Signature: signature
-    };
-
-    // Save to Local Storage
-    localStorage.setItem("employeeCheckIn", JSON.stringify(formData));
+    console.log("Check-in Details:");
+    console.log("Name:", name);
+    console.log("Position:", position);
+    console.log("Check-in Time:", checkinTime);
+    console.log("Contact:", contact);
+    console.log("Travel Method:", travelMethod);
+    console.log("Home Base:", homeBase);
+    console.log("Remarks:", remarks);
 
     alert("Form submitted successfully!");
-    console.log("Form Data Saved:", formData);
-}
-
-function printForm() {
-    window.print();
-}
+});
