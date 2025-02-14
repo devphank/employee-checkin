@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Incident Check-in Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Incident Check-in Form</h2>
+        <form id="checkinForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+
+            <label for="position">Position/Title:</label>
+            <input type="text" id="position" required>
+
+            <label for="checkinTime">Check-in Date & Time:</label>
+            <input type="datetime-local" id="checkinTime" required>
+
+            <label for="contact">Primary Contact Info:</label>
+            <input type="tel" id="contact" required>
+
+            <label>Method of Travel:</label>
+            <select id="travelMethod">
+                <option value="AOV">AOV</option>
+                <option value="POV">POV</option>
+                <option value="Bus">Bus</option>
+                <option value="Air">Air</option>
+                <option value="Other">Other</option>
+            </select>
+
+            <label for="homeBase">Home Base:</label>
+            <input type="text" id="homeBase" required>
+
+            <label for="remarks">Remarks:</label>
+            <textarea id="remarks"></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
